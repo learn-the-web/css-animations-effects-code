@@ -1,0 +1,89 @@
+html {
+	box-sizing: border-box;
+	font: normal 100%/1.5 Georgia,serif;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.hero {
+	max-height: 75vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.hero img {
+	width: 100%;
+
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	-webkit-animation: shrink 200ms ease-out forwards;
+	animation: shrink 200ms ease-out forwards;
+}
+
+.hero-content {
+	padding: 0 1rem;
+	position: absolute;
+	width: 100%;
+	bottom: 15%;
+	left: 100%;
+
+	-webkit-animation: slide-in 400ms 100ms cubic-bezier(.43,.22,.16,1.2) forwards;
+	animation: slide-in 400ms 100ms cubic-bezier(.43,.22,.16,1.2) forwards;
+
+	color: #fff;
+	font-size: 2rem;
+	text-align: center;
+	text-shadow: -1px 1px 4px rgba(0,0,0,0.8), 1px 1px 4px rgba(0,0,0,0.8);
+}
+
+.hero-content h1,
+.hero-content p {
+	margin: 0;
+}
+
+@-webkit-keyframes slide-in {
+	0% {
+		left: 100%;
+	}
+	100% {
+		left: 0;
+	}
+}
+
+@keyframes slide-in {
+	0% {
+		left: 100%;
+	}
+	100% {
+		left: 0;
+	}
+}
+
+@-webkit-keyframes shrink {
+	0% {
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+@keyframes shrink {
+	0% {
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}

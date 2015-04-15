@@ -1,0 +1,71 @@
+html {
+	box-sizing: border-box;
+
+	background-color: #9f221b;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+}
+
+.planet-wrapper {
+	margin: 8em 0;
+	position: relative;
+}
+
+.planet {
+	width: 400px;
+}
+
+.rocket {
+	height: 40px;
+	width: 40px;
+	background-image: url("../images/rocket.svg");
+	position: absolute;
+	left: calc(50% - 20px);
+	top: -40px;
+	-webkit-animation: orbit 5s linear infinite;
+	animation: orbit 5s linear infinite;
+	-webkit-transform-origin: center 240px;
+	transform-origin: center 240px;
+}
+
+.booster {
+	height: 24px;
+	width: 24px;
+	background: url("../images/boosters.svg") 0 0 / 24px 72px no-repeat;
+	position: absolute;
+	right: -21px;
+	top: calc(50% - 11px);
+	-webkit-animation: boosters 200ms steps(3) infinite alternate;
+	animation: boosters 200ms steps(3) infinite alternate;
+}
+
+@-webkit-keyframes orbit {
+	0% { -webkit-transform: rotate(0deg); }
+	40% { -webkit-transform: rotate(-90deg); }
+	60% { -webkit-transform: rotate(-270deg); }
+	100% { -webkit-transform: rotate(-360deg); }
+}
+
+@keyframes orbit {
+	0% { transform: rotate(0deg); }
+	40% { transform: rotate(-90deg); }
+	60% { transform: rotate(-270deg); }
+	100% { transform: rotate(-360deg); }
+}
+
+@-webkit-keyframes boosters {
+	0% { background-position: 0 0; }
+	100% { background-position: 0 -72px; }
+}
+
+@keyframes boosters {
+	0% { background-position: 0 0; }
+	100% { background-position: 0 -72px; }
+}

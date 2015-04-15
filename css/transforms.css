@@ -1,0 +1,17 @@
+html {
+	font: bold 160%/1.5 sans-serif;
+}
+
+.box {
+	display: inline-block;
+	padding: 6em;
+	background-color: green;
+	position: relative;
+	top: 100px;
+	left: 200px;
+	transition: all 250ms linear;
+}
+
+.box:target {
+	transform: rotate(30deg) scale(1.5) translate(100px, 50px);
+}

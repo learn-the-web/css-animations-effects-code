@@ -1,0 +1,28 @@
+html {
+	font: normal 100%/1.5 sans-serif;
+}
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	max-width: 35em;
+}
+
+dt {
+	margin: 0;
+	padding: 0;
+	font-size: 1.5em;
+	font-weight: bold;
+	transition: all 1s linear;
+}
+
+dd {
+	margin: 0;
+	padding: 0;
+	transition: all 1s linear;
+}
+
+dt:target,
+dt:target + dd {
+	background-color: #ffc;
+}

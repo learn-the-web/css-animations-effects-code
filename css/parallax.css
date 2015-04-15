@@ -1,0 +1,53 @@
+html {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+
+  -webkit-perspective: 1px;
+  perspective: 1px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.parallax-group {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.back {
+  -webkit-transform: translateZ(-1px) scale(2);
+  transform: translateZ(-1px) scale(2);
+  position: relative;
+  top: calc(((100vh - 56.25vw) / 4) * -2);
+}
+
+.front {
+  background-color: #ccc;
+  padding: 14em 1em;
+  position: relative;
+  z-index: 2;
+}
+
+h2 {
+  -webkit-transform: translateZ(-0.5px) scale(1.5);
+  transform: translateZ(-0.5px) scale(1.5);
+  position: absolute;
+  top: 10em;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
