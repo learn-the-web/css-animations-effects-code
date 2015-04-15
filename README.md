@@ -1,4 +1,4 @@
-# Accessibility code samples
+# CSS animations & effects code samples
 
 Code samples for the CSS animations & effects tutorial.
 
