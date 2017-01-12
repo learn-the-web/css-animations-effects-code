@@ -1,52 +1,52 @@
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 
-	background-color: #9f221b;
+  background-color: #9f221b;
 }
 
 *, *::before, *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 img {
-	display: block;
-	margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .planet-wrapper {
-	margin: 8em 0;
-	position: relative;
+  margin: 8em 0;
+  position: relative;
 }
 
 .planet {
-	width: 400px;
+  width: 400px;
 }
 
 .rocket {
-	width: 40px;
-	position: absolute;
-	left: calc(50% - 20px);
-	top: -40px;
-	animation: orbit 5s linear infinite;
-	transform-origin: center 240px;
+  width: 40px;
+  position: absolute;
+  left: calc(50% - 20px);
+  top: -40px;
+  animation: orbit 5s linear infinite;
+  transform-origin: center 240px;
 }
 
 @keyframes orbit {
 
-	0% {
-		transform: rotate(0deg);
-	}
+  0% {
+    transform: rotate(0deg);
+  }
 
-	40% {
-		transform: rotate(-90deg);
-	}
+  40% {
+    transform: rotate(-90deg);
+  }
 
-	60% {
-		transform: rotate(-270deg);
-	}
+  60% {
+    transform: rotate(-270deg);
+  }
 
-	100% {
-		transform: rotate(-360deg);
-	}
+  100% {
+    transform: rotate(-360deg);
+  }
 
 }

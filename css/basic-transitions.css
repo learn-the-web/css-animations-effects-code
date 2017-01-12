@@ -1,56 +1,56 @@
 html {
-	font: bold 160%/1.5 sans-serif;
+  font: bold 160%/1.5 sans-serif;
 }
 
 a,
 a:link,
 a:visited {
-	color: orange;
-	/* transition: property length timing-function delay (optional) */
-	transition: color 1000ms linear 1s;
+  color: orange;
+  /* transition: property length timing-function delay (optional) */
+  transition: color 1000ms linear 1s;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: red;
+  color: red;
 }
 
 .btn,
 .btn:link,
 .btn:visited {
-	display: inline-block;
-	padding: 0.5em 0.75em;
-	/* Linear gradients cannot be transitioned in all browsers */
-	background-image: linear-gradient(to bottom, orange, red);
-	color: #fff;
-	border-radius: 8px;
-	text-decoration: none;
-	/* `transition-property: all` allows multiple items to be transitioned the same way */
-	transition: all 250ms linear;
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  /* Linear gradients cannot be transitioned in all browsers */
+  background-image: linear-gradient(to bottom, orange, red);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  /* `transition-property: all` allows multiple items to be transitioned the same way */
+  transition: all 250ms linear;
 }
 
 .btn:hover,
 .btn:focus,
 .btn:active {
-	background: linear-gradient(to bottom, red, maroon);
-	border-radius: 18px;
-	padding: 1em 1.5em;
-	font-size: 0.5em;
+  background: linear-gradient(to bottom, red, maroon);
+  border-radius: 18px;
+  padding: 1em 1.5em;
+  font-size: 0.5em;
 }
 
 .box {
-	display: inline-block;
-	padding: 6em;
-	background-color: green;
-	font-size: 1em;
-	transition:
-		background-color 250ms ease-out,
-		border-radius 1s ease-in-out
-	;
+  display: inline-block;
+  padding: 6em;
+  background-color: green;
+  font-size: 1em;
+  transition:
+    background-color 250ms ease-out,
+    border-radius 1s ease-in-out
+  ;
 }
 
 .box:hover {
-	background-color: pink;
-	border-radius: 40px;
+  background-color: pink;
+  border-radius: 40px;
 }

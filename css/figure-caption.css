@@ -1,40 +1,40 @@
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *, *::before, *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 img {
-	width: 100%;
-	display: block;
+  width: 100%;
+  display: block;
 }
 
 .graphic {
-	margin: 0;
-	overflow: hidden;
-	padding: 0;
-	position: relative;
-	width: 400px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 400px;
 }
 
 .graphic figcaption {
-	bottom: -3.5em;
-	right: 10px;
-	padding: 1em;
-	position: absolute;
+  bottom: -3.5em;
+  right: 10px;
+  padding: 1em;
+  position: absolute;
 
-	background-color: rgba(0,0,0,0.5);
-	border-radius: 10px;
-	transition: all 200ms ease-out;
-	transform: rotate(-35deg);
-	transform-origin: right center;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 10px;
+  transition: all 200ms ease-out;
+  transform: rotate(-35deg);
+  transform-origin: right center;
 
-	color: #fff;
+  color: #fff;
 }
 
 .graphic:hover figcaption {
-	bottom: 10px;
-	transform: rotate(0);
+  bottom: 10px;
+  transform: rotate(0);
 }

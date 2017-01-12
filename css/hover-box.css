@@ -1,64 +1,64 @@
 html {
-	box-sizing: border-box;
-	font: normal 100%/1.5 Georgia,serif;
+  box-sizing: border-box;
+  font: normal 100%/1.5 Georgia,serif;
 }
 
 *, *::before, *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .unit {
-	margin: 0 auto;
-	width: 400px;
+  margin: 0 auto;
+  width: 400px;
 }
 
 .hoverbox {
-	display: block;
-	position: relative;
+  display: block;
+  position: relative;
 
-	border-radius: 50%;
-	box-shadow: 0 0 0 10px rgba(169,121,85, 0.8);
-	overflow: hidden;
-	transition: all 200ms ease-out;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px rgba(169,121,85, 0.8);
+  overflow: hidden;
+  transition: all 200ms ease-out;
 }
 
 .hoverbox img {
-	display: block;
-	width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .hoverbox-caption {
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	left: 10px;
-	bottom: 10px;
-	margin: 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  left: 10px;
+  bottom: 10px;
+  margin: 0;
 
-	background-color: rgba(122,141,163,0.4);
-	border-radius: 50%;
-	opacity: 0;
-	transition: all 200ms ease-out;
-	transform: scale(0);
+  background-color: rgba(122,141,163,0.4);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 200ms ease-out;
+  transform: scale(0);
 
-	color: #fff;
-	font-size: 4rem;
-	text-align: center;
+  color: #fff;
+  font-size: 4rem;
+  text-align: center;
 }
 
 .hoverbox-caption span {
-	position: absolute;
-	top: 50%;
-	left: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
-	transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .hoverbox:hover {
-	box-shadow: 0 0 0 15px rgba(169,121,85, 0.8);
+  box-shadow: 0 0 0 15px rgba(169,121,85, 0.8);
 }
 
 .hoverbox:hover .hoverbox-caption {
-	opacity: 1;
-	transform: scale(1);
+  opacity: 1;
+  transform: scale(1);
 }
